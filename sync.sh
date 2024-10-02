@@ -15,3 +15,7 @@ fi
 if ! diff ./starship.toml "$HOME/.config/starship.toml" > /dev/null; then
 	cp -i ./starship.toml "$HOME/.config/starship.toml"
 fi
+
+if ! diff ./zed/settings.json "$HOME/.config/zed/settings.json" > /dev/null; then
+	cp -ir ./zed "$HOME/.config/"
+fi
