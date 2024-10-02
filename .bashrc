@@ -37,7 +37,7 @@ source "$HOME/dev/repos/emsdk/emsdk_env.sh" 2> /dev/null
 if command -v starship > /dev/null; then
 	eval "$(starship init bash)"
 else 
-	PS1="[\u@\H \w]\$ "
+	PS1="[\u@\h \w]\$ "
 fi
 
 # Fix VS Code on Wayland
