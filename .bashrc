@@ -34,7 +34,7 @@ fi
 source "$HOME/dev/repos/emsdk/emsdk_env.sh" 2> /dev/null
 
 # Use Starship if availible, otherwise just a simple prompt
-if command -v starsip; then
+if command -v starship > /dev/null; then
 	eval "$(starship init bash)"
 else 
 	PS1="[\u@\H \w]\$ "
