@@ -7,6 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "assistant": {
+    "version": "2",
+    "enabled": false,
+    "button": false
+  },
   "ui_font_size": 16,
   "buffer_font_size": 13,
   "buffer_font_family": "FiraCode Nerd Font",
