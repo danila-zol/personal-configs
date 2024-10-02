@@ -1,0 +1,33 @@
+scan_timeout = 3000
+command_timeout = 5000
+
+format = """
+$username\
+[ ](fg:#ff5c03 bg:#202c2c)\
+$hostname\
+$directory\
+[ ](fg:#202c2c)\
+"""
+
+[username]
+show_always = true
+style_user = "fg:black bg:#ff5c03"
+format = '[ $user ]($style)'
+
+[hostname]
+ssh_only = false
+style = 'bg:#202c2c fg:white'
+format = '[$hostname]($style)'
+
+[directory]
+style = 'bg:#202c2c fg:white'
+format = '[ $path ]($style)'
+
+[os]
+style = 'bg:#202c2c fg:#3c6eb4'
+format = '[$symbol ]($style)'
+disabled = false
+
+[os.symbols]
+Fedora = ""
+
