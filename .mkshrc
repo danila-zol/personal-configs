@@ -1,0 +1,5 @@
+PS1="[${USER:=$(id -un)}@${HOSTNAME:=$(hostname)} \${PWD/#\$HOME/'~'}]$(
+	if (( USER_ID )); then print \$; else print \#; fi) "
+
+# Version with some color
+# PS1='[`printf "\e[32;1m"``whoami`@`hostname` `pwd | sed "s|^$HOME|~|"``printf "\e[0m"`]$ '
